@@ -1,0 +1,32 @@
+#include <iostream>
+#include <stdlib.h>
+#include <math.h>
+
+#define pi 2*acos(1.0)
+
+class circulo {
+    protected:
+    float circulo;
+    
+    public:
+    circulo();
+    circulo(float p);
+    double Area();
+}
+
+//Implementacion:
+circulo::circulo(){
+    radio = 10;
+}
+circulo::circulo (float p){
+    radio = p;
+}
+
+double circulo::Area(){
+    return (pi*pow(radio,2));
+}
+
+void main (){
+    float m;
+    
+}
